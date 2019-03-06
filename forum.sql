@@ -139,4 +139,7 @@ CREATE TABLE comment(
     PRIMARY KEY (pk_comment_id)
 ) COMMENT = '评论表 ';
 
+INSERT INTO `forum`.`user` (`pk_user_id`, `account`, `name`, `password`, `sex`, `salt`, `header_image`, `nick_name`, `qq`, `phone`, `birthday`, `total_total`, `dynamic_total`, `is_tourist`, `is_Del`, `create_time`, `update_time`) VALUES (10001, 'A10000', '金旺', '2630f581ea6b6a0710c4894499601d44', '男', '1527998033', 'NULL', '试试', '838210051', '18392496413', 'NULL', 12, 13, 1, 0, '2019-02-05 23:29:35', '2019-03-02 16:51:55')
 
+
+alter table `user` convert to character set utf8;
